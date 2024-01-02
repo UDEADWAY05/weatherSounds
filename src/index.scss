@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    max-width: 960px;
+    margin: 1rem auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    position: relative;
+        z-index: 2;
+        color: #fff;
+}
+
+.background {
+    position: absolute;
+    z-index: 1;
+    left: -10px;
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    filter: blur(5px);
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #fb7d00e0;
+}
+
+.imgs-block {
+    display: flex;
+    max-width: 1280px;
+    margin: auto;
+    flex-direction: row;
+}
+
+.img-block {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 15%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px;
+}
+
+.img-block:hover {
+    scale: 1.1;
+}
+
+.winterImg {
+    background-image: url(../public/assets/img/winter-bg.jpg);
+}
+
+.rainyImg {
+    background-image: url(../public/assets/img/rainy-bg.jpg);
+}
+
+.summerImg {
+    background-image: url(../public/assets/img/summer-bg.jpg);
+}
+
+.PlayAndPause {
+    width: 80px;
+    height: 80px;
+}
