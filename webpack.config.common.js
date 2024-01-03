@@ -2,7 +2,6 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
     context: path.resolve(__dirname, 'src'),
@@ -24,8 +23,7 @@ module.exports = {
                 }
             ]
         }),
-        new MiniCssExtractPlugin(),
-        new ESLintPlugin()
+        new MiniCssExtractPlugin()
     ],
     module: {
         rules: [
@@ -40,7 +38,6 @@ module.exports = {
                     options: {
                         postcssOptions: {
                             plugins: [require('postcss-preset-env')],
-                            
                         }
                     }
                 }, 'sass-loader'],
